@@ -1,0 +1,23 @@
+Reading top.hex
+top.hex loaded into memory
+Memory 5 bytes = 0x6f 0x00 0x00 0x0b 0x13
+VCD info: dumpfile top.vcd opened for output.
+Get AB40 flag, user function starts at              4307238
+FIR done
+FIR latency : 1039
+LA FIR started
+LA FIR passed
+LA QS started
+Call function qsort() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x0028
+Call function qsort() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x037d
+Call function qsort() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x09ed
+Call function qsort() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x0a6d
+LA QS passed
+QS Latency : 14986
+LA MM started
+Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x003e
+Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x0044
+Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x004a
+Call function matmul() in User Project BRAM (mprjram, 0x38000000) return value passed, 0x0050
+LA MM passed
+MM Latency : 30655
