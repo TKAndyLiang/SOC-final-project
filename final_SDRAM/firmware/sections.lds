@@ -14,8 +14,8 @@ MEMORY {
 	dff2 : ORIGIN = 0x00000400, LENGTH = 0x00000200
 	flash : ORIGIN = 0x10000000, LENGTH = 0x01000000
 	mprj : ORIGIN = 0x30000000, LENGTH = 0x00100000
-	mprjram :  ORIGIN = 0x38000000, LENGTH = 0x00002000
-	all_data : ORIGIN = 0x38002000, LENGTH = 0x00002000
+	mprjram :  ORIGIN = 0x38000000, LENGTH = 0x00001000
+	all_data : ORIGIN = 0x38001000, LENGTH = 0x00001000
 	hk : ORIGIN = 0x26000000, LENGTH = 0x00100000
 	csr : ORIGIN = 0xf0000000, LENGTH = 0x00010000
 }
@@ -57,7 +57,7 @@ SECTIONS
 		. = ALIGN(8);
 		_fdata = .;
 		top.elf-matmul.o(.data)
-		. = ALIGN(0x1000);
+		. = ALIGN(0x800);
 		top.elf-fir.o(.data)
 		. = ALIGN(0x100);
 		top.elf-qsort.o(.data)

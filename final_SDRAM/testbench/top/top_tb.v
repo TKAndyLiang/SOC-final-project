@@ -146,7 +146,7 @@ module top_tb;
 		$dumpvars(0, top_tb);
 
 		// Repeat cycles of 1000 clock edges as needed to complete testbench
-		repeat (1000) begin
+		repeat (500) begin
 			repeat (1000) @(posedge clock);
 			// $display("+1000 cycles");
 		end

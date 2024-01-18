@@ -549,7 +549,6 @@ end
 
 endmodule
 
-/*
 module fir 
 #(  parameter pADDR_WIDTH = 12,
     parameter pDATA_WIDTH = 32,
@@ -1032,7 +1031,9 @@ module fir
         end
     end
 endmodule
-*/
+
+
+/*
 
 module fir 
 #(  parameter pADDR_WIDTH = 12,
@@ -1503,7 +1504,7 @@ module fir
     end
 
 endmodule
-
+*/
 
 module bram11 (clk, we, re, waddr, raddr, wdi, rdo);
     // `define RAMinitFile "./init.dat"

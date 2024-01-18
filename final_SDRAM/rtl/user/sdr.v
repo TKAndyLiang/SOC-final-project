@@ -87,7 +87,7 @@ module sdr (
     // address mapping scheme, need to reduce its size
     // Each Bank is 4KB (one BRAM) = 32bit * 1024
     // parameter mem_sizes = 2**(ROW_BITS+COL_BITS) - 1;
-    parameter mem_sizes = 8192;
+    parameter mem_sizes = 4096;
     parameter A_WIDTH = $clog2(mem_sizes);
     // timing parameters  - in terms of # of tCK
     parameter tCK              =     6.0; // tCK    ns    Nominal Clock Cycle Time

@@ -56,9 +56,14 @@ module sdram_controller (
     wire [1:0]  Mapped_BA;
     wire [7:0]  Mapped_CA;
 	//0x38002000
-    assign Mapped_RA = {user_addr[22:14], user_addr[11:8]};
-    assign Mapped_BA = user_addr[13:12];
+    assign Mapped_RA = {user_addr[22:13], user_addr[10:8]};
+    assign Mapped_BA = user_addr[12:11];
     assign Mapped_CA = user_addr[7:0];
+	
+	
+    // assign Mapped_RA = {user_addr[22:14], user_addr[11:8]};
+    // assign Mapped_BA = user_addr[13:12];
+    // assign Mapped_CA = user_addr[7:0];
 	
     // assign Mapped_RA = {user_addr[22:12], user_addr[9:8]};
     // assign Mapped_BA = user_addr[11:10];
